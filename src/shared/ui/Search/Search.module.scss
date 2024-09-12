@@ -1,0 +1,29 @@
+:root {
+    --small: 100px;
+    --medium: 300px;
+    --large: 600px;
+}
+
+.component {
+    color: var(--text-secondary);
+    border: 1px solid var(--separator);
+    border-radius: 10px;
+    outline: none;
+    padding: 0 15px;
+}
+
+.small {
+    width: var(--small);
+    height: calc(var(--gap-xs) * 2);
+
+}
+
+.medium {
+    width: var(--medium);
+    height: calc(var(--gap-base) * 2);
+}
+
+.large {
+    width: var(--large);
+    height: calc(var(--gap-xl) * 2);
+}
