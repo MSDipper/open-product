@@ -1,0 +1,36 @@
+:root {
+    --height: 65px;
+    --padding: 10px;
+}
+
+.component {
+    height: var(--height);
+    background-color: var(--black);
+}
+
+.panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: calc(var(--gap-xl) * 3);
+}
+
+.search {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.iconSearch {
+    position: absolute;
+    color: var(--search);
+    right: 0;
+    top: 0;
+    transform: translate(-10px, 10px);
+}
