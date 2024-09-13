@@ -1,11 +1,10 @@
 import { Panel, Image } from "../../shared/ui";
-import { HeaderProps } from "./Header.props"
 import logo from '/logo.svg'
 import styles from './Header.module.scss'
 import { Search } from "../../shared/ui/Search";
 import classnames from "classnames";
 
-export const Header = ({ }: HeaderProps) => {
+export const Header = () => {
   return <div className={styles.component}>
     <Panel className={styles.panel}>
       <Image src={logo} width={120} height={38} alt="Logo" />
