@@ -5,6 +5,6 @@ export interface SearchProps {
     placeholder?: string;
     width?: sizeInput;
     className?: string;
-    id: string;
-    type: SearchTypeField;
+    id?: string;
+    type?: SearchTypeField;
   }
