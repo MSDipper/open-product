@@ -1,0 +1,12 @@
+:root {
+    --width: 1300px;
+}
+
+.content {
+    // background: var(--bg);
+    max-width: var(--width);
+    margin: 0 auto;
+    padding: var(--gap-base) 0 var(--gap-base);
+    // border-top-left-radius: 42px;
+    // border-bottom-left-radius: 42px;
+}
