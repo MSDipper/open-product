@@ -3,12 +3,15 @@ import logo from '/logo.svg'
 import styles from './Header.module.scss'
 import { Search } from "../../shared/ui/Search";
 import classnames from "classnames";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   return <div className={styles.component}>
     <Panel className={styles.panel}>
-      <Image src={logo} width={120} height={38} alt="Logo" />
-      <div  className={styles.search}>
+      <Link to='/'>
+        <Image src={logo} width={120} height={38} alt="Logo" />
+      </Link>
+      <div className={styles.search}>
         <Search placeholder="Искать" width="large" />
         <span className={classnames("material-icons", styles.iconSearch)}>saved_search</span>
       </div>
