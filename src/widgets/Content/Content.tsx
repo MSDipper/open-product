@@ -1,8 +1,10 @@
+import { ProductsList } from '../../entities';
+import styles from './Content.module.scss';
 
 export const Content = () => {
     return (
-        <div>
-            Content
+        <div className={styles.content}>
+            <ProductsList />
         </div>
     )
 }
